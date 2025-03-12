@@ -13,22 +13,43 @@
     margin: 0 auto;
 }
 
-header.container{
+header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header{
-    padding: 16px 0;
+    padding: 16px 0 0;
     border-bottom: 1px solid #ccc;
 }
 
 .sub-menu{
     display: none;
+    position: absolute;
+    left: 0;
+    width: 300px;
+    top: 100%;
 }
 
-.menu{
+.menu >li{
     float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent ;
+    position: relative;
 }
 
+.elemento{
+    clear: both;
+}
+
+.menu li:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu li{
+    display: block;
+    padding: 8px;
+    
+}
