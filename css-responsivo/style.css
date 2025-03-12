@@ -26,6 +26,7 @@ header{
 
 .sub-menu{
     display: none;
+    border: 1px solid red;
     position: absolute;
     left: 0;
     width: 300px;
@@ -46,6 +47,10 @@ header{
 
 .menu li:hover .sub-menu{
     display: block;
+}
+
+.menu li:hover{
+    border-color: red ;
 }
 
 .sub-menu li{
