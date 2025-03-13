@@ -22,6 +22,7 @@ header .container{
 header{
     padding: 16px 0 0;
     border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
 }
 
 .sub-menu{
@@ -60,7 +61,37 @@ header{
     
 }
 
+img{
+    width: 150px;
+    height: 150px;
+}
+
 .conteudo{
     display: grid;
     grid-template-columns: 70% 30%;
+}
+
+.noticia img{
+    max-width: 100%;
+}
+
+.destaque .noticia a{
+    display: flex;
+    font-size: 1.5em;
+}
+
+.destaque .noticia img{
+    margin-right: 8px;
+}
+
+section h2{
+    margin-bottom: 32px;
+}
+
+aside{
+    padding-left: 40px;
+}
+
+aside.noticia{
+    margin-bottom: 24px;
 }
