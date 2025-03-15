@@ -62,8 +62,8 @@ header{
 }
 
 img{
-    width: 150px;
-    height: 150px;
+    width: 320px;
+    height: 320px;
 }
 
 .conteudo{
@@ -137,4 +137,42 @@ aside.noticia{
     aside{
         padding-left: 0;
     }
+    
+    header div.container{
+        flex-direction: column;
+    }
+
+    
+.sub-menu{
+    display: block;
+    width: 100%;
+    position: relative;
+    border: none;
+}
+
+.menu{
+    display: none;
+
+}
+
+.menu >li{
+    clear: both;
+}
+
+.sub-menu li{
+    display: block;
+    padding: 8px;
+    
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.botao button{
+    
+}
 }
