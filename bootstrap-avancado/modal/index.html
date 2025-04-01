@@ -38,7 +38,11 @@
         //A modal abre assim que carrega o html , sem precisar apertar o botão primeiro
         document.addEventListener('DOMContentLoaded', function(){
             const modalExemplo = new bootstrap.Modal('#exemplo-modal')
-            modalExemplo.show()
+            //delay
+            setTimeout(function(){
+                modalExemplo.show()
+            }, 3000)
+            
         })
     </script>
 </body>
