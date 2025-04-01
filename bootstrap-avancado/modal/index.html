@@ -10,17 +10,20 @@
     <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exemplo-modal">
         Abrir modal
     </button>
-    <div class="modal" id="exemplo-modal">
+    <div class="modal" id="exemplo-modal" data-bs-backdrop="static">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5>Título da modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+
+                    </button>
                 </div>
                 <div class="modal-body">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam totam modi ut corrupti nulla esse veniam autem! Maiores cum ipsam tempore, at quod, laudantium nobis, delectus quam mollitia dolores iure!</p>
                 </div>
                 <div class="modal-footer">
-                    <h5>Rodapé da modal</h5>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
                 </div>
             </div>
         </div>
