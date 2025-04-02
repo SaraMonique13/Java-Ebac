@@ -13,7 +13,7 @@
             text-align: center;
         }
         section{
-            background-color: #ccc;
+            background-color: #fff;
             height: 100vh;
             padding-top: 70px;
         }
@@ -55,6 +55,31 @@
     <div data-bs-spy="scroll" data-bs-target="#cabecalho">
         <section id="inicio">
             <h2>Inicio</h2>
+            <div class="container">
+                <nav class="nav nav-tabs">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">
+                        Eletrônicos
+                    </button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">
+                        Moda masculina
+                    </button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">
+                        Moda feminina
+                    </button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        Conteúdo da aba Eletrônicos
+                    </div>
+                    <div class="tab-pane " id="aba2">
+                        Conteúdo da aba Moda Masculina
+                    </div>
+                    <div class="tab-pane " id="aba3">
+                        Conteúdo da aba Moda feminina
+                    </div>
+                    
+                </div>
+            </div>
         </section>
         <section id="produtos">
             <h2>Produtos</h2>
