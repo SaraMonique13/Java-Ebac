@@ -12,6 +12,16 @@
         .nav-link{
             text-align: center;
         }
+        section{
+            background-color: #ccc;
+            height: 100vh;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: white;
+        }
     </style>
 </head>
 <body>
@@ -25,22 +35,34 @@
             <nav class="collapse navbar-collapse justify-content-end" id="menu">
                 <ul class="nav navbar-nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Inicio</a>
+                        <a class="nav-link active" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Produtos</a>
+                        <a class="nav-link" href="#produtos">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Promoções</a>
+                        <a class="nav-link" href="#Promoções">Promoções</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
             </nav>
             </div>
         </div>
     </header>
+    <section id="inicio">
+        <h2>Inicio</h2>
+    </section>
+    <section id="produtos">
+        <h2>Produtos</h2>
+    </section>
+    <section id="promocoes">
+        <h2>Promoções</h2>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+    </section>
     <script src="lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
