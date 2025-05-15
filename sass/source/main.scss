@@ -1,0 +1,28 @@
+$cor-principal:#f0c7e3;
+$cor-secundaria:rgb(138, 12, 60);
+
+body{
+    background-color:$cor-principal;
+}
+
+header{
+    background-color:$cor-principal;
+
+    h1{
+        color:$cor-secundaria;
+    }
+
+}
+
+button{
+    padding: 16px;
+    background-color: $cor-secundaria;
+    color: $cor-principal;
+
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+
+ 
