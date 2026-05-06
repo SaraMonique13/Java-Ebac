@@ -1,7 +1,53 @@
 @use 'config/reset';
-@use 'secoes/produtos';
-@use 'config/cores';
+
+@mixin elementoForm(){
+    padding: 8px;
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
 
 body{
-    background-color: cores.$corDefundo;
+    background-color: #eee;
 }
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 16px 0;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.form-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    form{
+        max-width: 480px;
+        width: 100%;
+        margin-top: 40px;
+
+
+}
+        input{
+            @include elementoForm();
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        button{
+            @include elementoForm();
+        }
+    }
+
+
