@@ -77,16 +77,6 @@ section {
     background-color: variaveis.$corBotoes;
 }
 
-@media screen and (max-width: variaveis.$mobile){
-     .products {
-        display: block;
-    }
-
-    .product-item  {
-        margin-bottom: 32px;
-    }
-}
-
 @media screen and (max-width: variaveis.$tablet){
     .container {
         max-width: 80%;
@@ -97,3 +87,14 @@ section {
         column-gap: 3%;
     }
 }
+
+@media screen and (max-width: variaveis.$mobile){
+     .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
+
