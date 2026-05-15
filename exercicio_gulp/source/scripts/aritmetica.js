@@ -1,0 +1,3 @@
+const soma = require('./sum');
+
+console.log('Somar: ', soma(10, 20));
