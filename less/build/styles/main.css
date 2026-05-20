@@ -1,0 +1,19 @@
+body {
+  background-color: #c44569;
+  color: #f7d794;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width:768px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (max-width:576px) {
+  .container {
+    max-width: 70%;
+  }
+}
