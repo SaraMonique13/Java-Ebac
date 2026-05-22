@@ -3,6 +3,19 @@
 @breakpointMobile: ~"(max-width:576px)";
 @breakpointTablet: ~"(max-width:768px)";
 
+.marginBottom8{
+    margin-bottom: 8px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Roboto", sans-serif;
+
+}
+
+
 body{
     background-color:@corDeFundo;
     color: @corTexto;
@@ -21,4 +34,32 @@ body{
         max-width: 70%;
 }
 
+}
+header{
+    padding: 24px;
+
+    .profile{
+        display: block;
+        margin: 0 auto 24px;
+        border-radius: 50%;
+    }
+
+    
+}
+.profile-bio{
+    text-align: center;
+    &-title{
+        font-size: 16px;
+        .marginBottom8();
+    }
+
+    &-subtitle{
+        font-size: 14px;
+        .marginBottom8();
+    }
+
+    &-text{
+        font-size: 12px;
+        opacity: 0.7;
+    }
 }
