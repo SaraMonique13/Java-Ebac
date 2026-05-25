@@ -1,0 +1,117 @@
+@import "maps.less";
+
+@breakpointMobile: ~"(max-width:576px)";
+@breakpointTablet: ~"(max-width:768px)";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #colors[background-color];
+    color: #colors[text-color];
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+     @media @breakpointTablet{
+        max-width: 80%;
+    }
+
+    @media @breakpointMobile{
+        max-width: 70%;
+}
+
+}
+
+li{
+    list-style: none;
+    font-weight: bold;
+}
+
+header {
+    background-color:#colors[header-color];
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+}
+
+.menu {
+    display: flex;
+    
+    li{
+        
+        margin-left: 24px;
+    }
+
+    a{
+        color: #colors[text-color];
+        text-decoration: none;
+    }
+}
+
+
+
+section {
+    padding: 56px 0;
+}
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+
+    .product-item {
+        list-style: none;
+        
+        img {
+    width: 100%;
+    border-radius: 16px;
+    
+}
+    }
+
+.product-button {
+    display: block;
+    background-color:#colors[button-color];
+    color: #colors[text-color];
+    border: 1px solid #colors[button-color];
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+
+    &:hover{
+        background-color:transparent;
+        color: #colors[button-color];
+    }
+}
+
+}
+
+@media @breakpointMobile{
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
